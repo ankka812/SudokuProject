@@ -307,13 +307,8 @@ int main(void) {
 
     while (1) {
         displayBoard(board);  // Display the board
-        printf("Enter row (1-%d), column (1-%d) and value (0=clear), -1 -1 -1 to quit or -1 -1 0 to show menu: ", size, size);
+        printf("Enter row (1-%d), column (1-%d) and value (0=clear) or -1 -1 0 to show menu: ", size, size);
         scanf("%d %d %d", &row, &col, &val);
-
-        if (row == -1 && col == -1 && val == -1) {
-            printf("Game ended.\n");
-            break;
-        }
 
         if (row == -1 && col == -1 && val == 0) {
             printf("Game paused. Choose an option from the menu:\n");
