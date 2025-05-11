@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 
+void runSA(int **board);
+
 // Global variables for board size, subgrid size, and number of hints
 int size = 9;
 int sub = 3;
@@ -33,7 +35,8 @@ void showMenu() {
     printf("4. Instructions\n");
     printf("5. Save game\n");
     printf("6. Load game\n");
-    printf("7. Exit\n");
+    printf("7. Use Simulated Annealing to solve Sudoku\n");
+    printf("8. Exit\n");
     printf("Choose an option: ");
 }
 
@@ -293,7 +296,9 @@ int main(void) {
             saveGame(board, fixed);  // Save the current game
         } else if (choice == 6) {
             loadGame(board, fixed);  // Load a saved game
-        } else if (choice == 7) {
+        } else if(choice == 7) {
+        	runSA(board);
+        } else if (choice == 8) {
             printf("Exiting...\n");
             exit(0);  // Exit the program
         } else {
@@ -336,7 +341,9 @@ int main(void) {
                 saveGame(board, fixed);
             } else if (choice == 6) {
                 loadGame(board, fixed);
-            } else if (choice == 7) {
+            } else if(choice == 7) {
+          		runSA(board);
+            } else if (choice == 8) {
                 printf("Exiting...\n");
                 exit(0);
             }
