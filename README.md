@@ -28,5 +28,9 @@ A simple Sudoku game implemented in C. The game allows players to select a board
 
 ![Screenshot](https://github.com/ankka812/SudokuProject/blob/main/images/Zrzut%20ekranu%202025-04-30%20230556.png)
 
+![Screenshot](https://github.com/ankka812/SudokuProject/blob/main/images/Zrzut%20ekranu%202025-05-11%20213139.png)
+
+![Screenshot](https://github.com/ankka812/SudokuProject/blob/main/images/Zrzut%20ekranu%202025-05-11%20213154.png)
+
 ![Screenshot](https://github.com/ankka812/SudokuProject/blob/main/images/Zrzut%20ekranu%202025-05-06%20142631.png)
 
