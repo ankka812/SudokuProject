@@ -1,0 +1,3 @@
+C:/Users/ankaw/Desktop/SudokuProject/cmake-build-debug/CMakeFiles/SudokuSolver.dir
+C:/Users/ankaw/Desktop/SudokuProject/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ankaw/Desktop/SudokuProject/cmake-build-debug/CMakeFiles/rebuild_cache.dir

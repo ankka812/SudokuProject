@@ -3,6 +3,7 @@
 #include <time.h>
 
 void runSA(int **board);
+void runGA(int **board, int **fixed);
 
 // Global variables for board size, subgrid size, and number of hints
 int size = 9;
@@ -36,7 +37,8 @@ void showMenu() {
     printf("5. Save game\n");
     printf("6. Load game\n");
     printf("7. Use Simulated Annealing to solve Sudoku\n");
-    printf("8. Exit\n");
+    printf("8. Use Genetic Algorithm to solve Sudoku\n"); // <== DODANE
+    printf("9. Exit\n");
     printf("Choose an option: ");
 }
 
@@ -298,10 +300,12 @@ int main(void) {
             loadGame(board, fixed);  // Load a saved game
         } else if(choice == 7) {
         	runSA(board);
-        } else if (choice == 8) {
-            printf("Exiting...\n");
-            exit(0);  // Exit the program
-        } else {
+       	} else if (choice == 8) {
+    		runGA(board, fixed);
+		} else if (choice == 9) {
+    		printf("Exiting...\n");  // Exit
+    		exit(0);
+		} else {
             printf("Invalid choice.\n");
         }
     }
@@ -344,9 +348,13 @@ int main(void) {
             } else if(choice == 7) {
           		runSA(board);
             } else if (choice == 8) {
-                printf("Exiting...\n");
-                exit(0);
-            }
+    		runGA(board, fixed);
+			} else if (choice == 9) {
+    			printf("Exiting...\n");
+    			exit(0);
+			} else {
+            	printf("Invalid choice.\n");
+        	}
             continue;
         }
 
