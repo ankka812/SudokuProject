@@ -1,0 +1,5 @@
+# ninja log v6
+24	215	7710256094256724	CMakeFiles/SudokuSolver.dir/sa_sudoku.c.obj	108b3986b896fa67
+15	219	7710256094170278	CMakeFiles/SudokuSolver.dir/ga_sudoku.c.obj	6a3dc05bedb38e66
+6	235	7710256094070233	CMakeFiles/SudokuSolver.dir/Sudoku.c.obj	4a2b6b5f94f1e997
+236	485	7710256096372354	SudokuSolver.exe	8521ef3174dc6f
